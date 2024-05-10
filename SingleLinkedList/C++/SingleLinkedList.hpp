@@ -16,9 +16,11 @@ class SingleLinkedList
 
 		bool insertBeginning(int value);
 
-		bool insertPosition(int value, int position);
+		bool insertPosition(int value, int index);
 
 		bool insertEnd(int value);
+
+		int getSizeOfList();
 
 		bool isEmpty();
 
