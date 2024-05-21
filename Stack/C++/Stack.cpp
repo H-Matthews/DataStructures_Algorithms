@@ -21,13 +21,16 @@ void Stack::push(int value)
 
 int Stack::pop()
 {
+    if(_top == NULL)
+        return -1;
+
     Node* temp = _top;
     _top = _top->pNext;
 
     int value = temp->data;
     delete temp;
     _len--;
-    
+
     return value;
 }
 
